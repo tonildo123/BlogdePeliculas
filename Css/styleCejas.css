@@ -1,0 +1,533 @@
+:root {
+    --color-1: rgb(226, 42, 29);
+    --color-2:
+        --color-3: --color-4: --color-5: --color-6:
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px 0px 0px 0px;
+}
+
+.header {
+    /* background-image: linear-gradient(116deg, rgb(253, 253, 81) 15%, rgb(87, 87, 253), rgb(255, 70, 70)); */
+    background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+.nav img {
+    height: 75px;
+    position: relative;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 5px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 1.3rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu li a:hover {
+    background: var(--color-1);
+    color: white;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: var(--color-1);
+    transition: 0.5s;
+}
+
+.nav-menu-link {
+    border-radius: 10px;
+
+}
+
+.checkbtn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0px 20px;
+    line-height: 85px;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+
+/* INICIO MEDIA QUERY NAVBAR */
+@media (max-width:992px) {
+    .header {
+        height: 100px;
+    }
+
+    .nav img {
+        height: 60px;
+        position: relative;
+        left: 5px;
+        z-index: 999;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        left: 0;
+        height: calc(100% - 50%);
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+
+    .nav-menu-item {
+        padding: 5px;
+
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: var(--color-1);
+        color: white;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 100%;
+    }
+}
+
+/* FIN MEDIA QUERY NAVBAR */
+
+.container-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* INICIO FOOTER */
+footer {
+    width: 100%;
+    padding: 10px 2px;
+    background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
+
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: black;
+}
+
+.box-footer .logo img {
+    max-width: 200px;
+    position: relative;
+    left: 50px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-footer h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.box-footer a {
+    margin-top: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.box-footer a span {
+    padding: 10px;
+}
+
+.box-footer a span:hover {
+    background: var(--color-1);
+    transition: 0.5s;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-footer .fa-facebook-square {
+    color: rgb(44, 60, 206);
+    font-size: 25px;
+}
+
+.box-footer .fa-twitter-square {
+    color: rgb(31, 125, 187);
+    font-size: 25px;
+}
+
+.box-footer .fa-envelope {
+    color: red;
+    font-size: 25px;
+}
+
+.box-footer .fa-linkedin {
+    color: white;
+    font-size: 25px;
+}
+
+.box-copyright {
+    text-align: center;
+}
+
+.box-copyright p {
+    margin: 10px;
+    color: white;
+}
+
+.box-copyright hr {
+    border: none;
+    height: 1px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.box-copyright span {
+    font-weight: 750;
+    color: rgb(255, 184, 30);
+}
+
+/* FIN FOOTER */
+
+
+/* INICIO ACERCA DE NOSOTROS */
+.body-nosotros {
+    background-color: rgb(228, 228, 228);
+}
+
+.descripción {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+.descripción h1 {
+    margin-bottom: 30px;
+}
+
+.descripción hr {
+    margin: 50px auto;
+}
+
+.container-nosotros {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.box-nosotros {
+    text-align: center;
+    margin: 30px 70px;
+    background-image: linear-gradient(-30deg, #9c17c5, #177934, rgb(228, 228, 228) 30%);
+    height: 350px;
+    width: 250px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.box-nosotros h3 {
+    margin: 10px;
+}
+
+.box-nosotros img {
+    width: 200px;
+    border-radius: 0px 80px 80px 80px;
+    box-shadow: 5px 5px 10px;
+}
+
+.linea {
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+/* fIN ACERCA DE NOSOTROS */
+
+
+/* MEDIA QUERY ACERCA DE NOSOTROS */
+@media (max-width:665px) {
+    .descripción {
+        font-size: 18px;
+    }
+
+    .descripción p {
+        margin: 0px 15px;
+    }
+
+    .descripción hr {
+        width: 300px;
+    }
+
+    .box-nosotros {
+        height: 410px;
+    }
+
+    .box-nosotros img {
+        width: 240px;
+    }
+
+    .linea {
+        width: 300px;
+    }
+}
+
+/* FIN MEDIA QUERY ACERCA DE NOSOTROS */
+
+
+
+/* PAG INFINITY WAR */
+.body-inf {
+    background-color: rgb(228, 228, 228);
+}
+
+.descrip-infinity {
+    text-align: center;
+    margin: 50px;
+}
+
+.descrip-infinity hr {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.container-inf {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.box1-inf img {
+    height: 730px;
+    width: 45%;
+    margin: 10px;
+}
+
+.box2-inf {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Trailer INFINITY WAR */
+.container-trailer-inf {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.container-modal-suscrip .form-check a {
+    text-decoration: none;
+}
+
+
+/* INICIO COMENTARIOS PELICULAS */
+.container-comentary-inf {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    resize: none;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.container-comentary-inf2 h2,
+.container-comentary-inf2 hr {
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.container-comentary-inf3 {
+    max-width: 1100px;
+    margin: 25px auto;
+    display: flex;
+}
+
+.comentary-box1 {
+    margin: 0px 40px 40px 30px;
+    color: rgb(20, 130, 219);
+}
+
+.comentary-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.comentary-box2 span {
+    display: flex;
+    margin-right: 10px;
+}
+
+.comentary-box2 .fs-4 {
+    color: rgb(20, 130, 219);
+}
+
+.comentary-box2 span i {
+    font-size: 0.7rem;
+    margin-top: 15px;
+}
+
+.comentary-box2 p {
+    margin-top: 20px;
+}
+
+.comentary-box3 {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.comentary-box3 i {
+    color: rgb(20, 130, 219);
+}
+
+/* FIN COMENTARIOS PELICULAS */
+
+
+/* INICIO MEDIA QUERY COMENTARIOS */
+@media (max-width:650px) {
+    .container-comentary-inf3 {
+        max-width: 1100px;
+        margin: 25px auto;
+        display: flex;
+    }
+
+    .comentary-box1 {
+        font-size: 0.8rem;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .comentary-box2 span i {
+        font-size: 0.6rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:620px) {
+    .container-comentary-inf3 {
+        max-width: 1100px;
+        margin: 25px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .comentary-box1 {
+        font-size: 0.6rem;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .comentary-box2 span i {
+        font-size: 0.6rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .comentary-box2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        margin: 5px;
+    }
+
+    .comentary-box2 span {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .comentary-box2 span i {
+        font-size: 0.7rem;
+        margin-top: 14px;
+    }
+
+    .comentary-box2 p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .comentary-box3 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+/* FIN MEDIA QUERY COMENTARIOS */
