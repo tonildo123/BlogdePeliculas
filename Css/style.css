@@ -256,9 +256,11 @@ footer {
 	}
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body .modal{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +270,7 @@ body .modal{
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .5);
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
@@ -277,26 +279,9 @@ body .modal{
     opacity: 1;
     visibility: visible;
 }
-.contenedorModal{
-    width: 40%;
-    height: 80%;
-    margin: auto;
-    font-family: "Open Sans", sans-serif;
-    transition: all 500ms ease;
-    position: relative;
-    transform: translateY(-30%);
-}
+
 #btn-modal:checked ~ .modal .contenedorModal{
     transform: translateY(0%);
-}
-.contenedorModal header{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-image: linear-gradient(135deg, #e4fd00, #0239ff, rgb(255, 0, 0));
-    animation:gradient 10s ease infinite;
-     background-size: 130%;
-    color: #fff;
 }
 .contenedorModal label{
     position: absolute;
@@ -314,40 +299,102 @@ body .modal{
     cursor: pointer;
 }
 
-.flex-container{
-  padding-bottom: -100px;
-  display: flex;
-  justify-content:space-around;
-  flex-direction: row;
-  width: 100%;
-}
 .form{
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  background-image: linear-gradient(135deg, #000000, #282a30, rgb(0, 0, 0));
-  animation:gradient 10s ease infinite;
-  background-size: 1100%;
-  color: #fff;
-}
-.enviar{
-    padding: 10px;
-    display: flex;
-    justify-content: end;
-    font-family: 'roboto';
-    
-}
-.ubicacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.ubicacion h4{
-    padding-left: 20px;
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    padding: 2.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
-.form textarea{
+.form-title{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+.form-paragraph{
+    font-weight: 300;
+}
+
+.form-container{
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+    display: grid;
+    gap: 3.5em;
+}
+
+.form-group{
+    position: relative;
+    --color: #5757577e
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+}
+
+.form-submit{
+    background: #f23838;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f23838;
+}
+
+@media (max-widht:425px) {
+
+    .form-title{
+        font-size: 1.8rem;
+    }
+
+}
+
+.form .x{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.form-group textarea{
+    width: 100%;
+    color: #706c6c;
+    font-size: 1rem;
+    padding-top: .6em;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
     resize: none;
 }
-
-
