@@ -313,15 +313,15 @@ body .modal{
 
 .form-title{
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 .form-paragraph{
     font-weight: 300;
 }
 
 .form-container{
-    margin-top: 5em;
-    margin-bottom: 2.5em;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
     display: grid;
     gap: 3.5em;
 }
@@ -345,10 +345,10 @@ body .modal{
 
 .form-label{
     color: var(--color);
-    cursor: pointer;
     position: absolute;
     top: -18px;
     left: 5px;
+    cursor: text;
 }
 
 .form-submit{
@@ -392,7 +392,8 @@ body .modal{
     width: 100%;
     color: #706c6c;
     font-size: 1rem;
-    padding-top: .6em;
+    margin-top: 5px;
+    padding-top: 1em; 
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;

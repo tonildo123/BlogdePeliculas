@@ -39,22 +39,22 @@
               
                 <div class="form-container">
                   <div class="form-group">
-                    <input type="text" id="name" class="form-input" placeholder=" ">
+                    <input type="text" id="name" class="form-input" placeholder=" " required minlength="3" maxlength="15">
                     <label for="name" class="form-label">Nombre:</label>
                     <span class="form-line"></span>
                   </div>
                   <div class="form-group">
-                    <input type="text" id="email" class="form-input" placeholder=" ">
-                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" class="form-input" placeholder=" " required minlength="4" maxlength="30">
+                    <label for="email" class="form-label">Email:</label required>
                     <span class="form-line"></span>
                   </div>
                   <div class="form-group">
-                    <textarea  id="textarea" cols="30" rows="2"></textarea>
+                    <textarea  id="textarea" cols="30" rows="3"></textarea>
                     <label for="textarea" class="form-label">Comentario:</label>
                     <span class="form-line"></span>
                   </div>
 
-                  <input type="submit" class="form-submit" value="Enviar">
+                  <input type="submit"   class="form-submit" value="Enviar">
 
                 </div>
               </form>
