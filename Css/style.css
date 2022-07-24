@@ -258,7 +258,7 @@ footer {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-body .modal{
+body .modal-l{
     width: 100%;
     height: 100%;
     display: flex;
@@ -266,7 +266,7 @@ body .modal{
     align-items: center;
     background-color: #000000b0;
 }
-.modal{
+.modal-l{
     position: fixed;
     top: 0;
     left: 0;
@@ -275,15 +275,15 @@ body .modal{
     opacity: 0;
     visibility: hidden;
 }
-#btn-modal:checked ~ .modal{
+#btn-modal:checked ~ .modal-l{
     opacity: 1;
     visibility: visible;
 }
 
-#btn-modal:checked ~ .modal .contenedorModal{
+#btn-modal:checked ~ .modal-l .contenedorModal-l{
     transform: translateY(0%);
 }
-.contenedorModal label{
+.modalcontact-l{
     position: absolute;
     top: 10px;
     font-family: 'roboto';
@@ -299,7 +299,7 @@ body .modal{
     cursor: pointer;
 }
 
-.form{
+.form-l{
     background-color: #fff;
     width: 90%;
     margin: auto;
@@ -311,27 +311,27 @@ body .modal{
     text-align: center;
 }
 
-.form-title{
+.form-title-l{
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
-.form-paragraph{
+.form-paragraph-l{
     font-weight: 300;
 }
 
-.form-container{
+.form-container-l{
     margin-top: 3em;
     margin-bottom: 1.5em;
     display: grid;
     gap: 3.5em;
 }
 
-.form-group{
+.form-group-l{
     position: relative;
     --color: #5757577e
 }
 
-.form-input{
+.form-input-l{
     width: 100%;
     background: none;
     color: #706c6c;
@@ -343,7 +343,7 @@ body .modal{
     font-family: 'Roboto', sans-serif;
 }
 
-.form-label{
+.form-label-l{
     color: var(--color);
     position: absolute;
     top: -18px;
@@ -351,7 +351,7 @@ body .modal{
     cursor: text;
 }
 
-.form-submit{
+.form-submit-l{
     background: #f23838;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -362,7 +362,7 @@ body .modal{
     border-radius: .5em;
 }
 
-.form-line{
+.form-line-l{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -373,13 +373,13 @@ body .modal{
 
 @media (max-widht:425px) {
 
-    .form-title{
+    .form-title-l{
         font-size: 1.8rem;
     }
 
 }
 
-.form .x{
+.form-l .x{
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -388,14 +388,15 @@ body .modal{
     cursor: pointer;
 }
 
-.form-group textarea{
+.form-group-l textarea{
     width: 100%;
     color: #706c6c;
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-top: 1em; 
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;
     resize: none;
 }
+
