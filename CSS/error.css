@@ -1,0 +1,27 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container-fluid{
+    background: linear-gradient(to right, #ce5937 0%,#a7690e 50%, #e7dccb 100%); 
+    
+}
+a{
+    text-decoration: none; 
+    color: aliceblue;
+    
+}
+
+img{
+    object-fit: scale-down;
+ 
+}
+
+#err{
+
+    padding-top: 4rem;
+}
