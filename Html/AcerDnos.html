@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Css/styleCejas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/cf8f5c0c19.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body class="body-nosotros">
+  <!--INICO NAVBAR -->
+  <header class="header">
+    <nav class="nav">
+      <img class="logo" src="../Assets/foto-nav.png" alt="" />
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i></button>
+      </label>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="AcerDnos.html" class="nav-menu-link nav-link">Acerca de Nosotros</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link">Contacto</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link">Login</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link nav-menu-link_active" data-bs-toggle="modal"
+            data-bs-target="#navModal">Suscribirse</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- FIN NAVBAR -->
+
+  <!-- INICIO MODAL SUSCRIPCIÓN-->
+  <div class="container-modal-suscrip">
+    <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="navModalLabel">Suscripción</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- INICIO MODAL BODY -->
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Clemente"
+                  maxlength="22" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" placeholder="Cejas"
+                  maxlength="22" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  <input type="text" class="form-control" id="validationDefaultUsername"
+                    aria-describedby="inputGroupPrepend2" placeholder="Cuchy25" minlength="6" maxlength="10" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="Tucumán" maxlength="15"
+                  required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Provincia</label>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">Seleccione</option>
+                  <option>Buenos Aires</option>
+                  <option>Capital Federal</option>
+                  <option>Catamarca</option>
+                  <option>Chaco</option>
+                  <option>Chubut</option>
+                  <option>Cordoba</option>
+                  <option>Corrientes</option>
+                  <option>Entre Ríos</option>
+                  <option>Formosa</option>
+                  <option>Jujuy</option>
+                  <option>La Pampa</option>
+                  <option>La Rioja</option>
+                  <option>Mendoza</option>
+                  <option>Misiones</option>
+                  <option>Neuquén</option>
+                  <option>Rio Negro</option>
+                  <option>Salta</option>
+                  <option>San Juan</option>
+                  <option>San Luis</option>
+                  <option>Santa Cruz</option>
+                  <option>Santa Fe</option>
+                  <option>Santiago del Estero</option>
+                  <option>Tierra del Fuego</option>
+                  <option>Tucumán</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="validationDefault05" placeholder="4000" maxlength="4"
+                  required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passwordDefault05" minlength="6" maxlength="12"
+                  required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Repetir Contraseña</label>
+                <input type="password" class="form-control" id="passwordDefault05" minlength="6" maxlength="12"
+                  required>
+              </div>
+              <div>
+                <P>Entre 6 a 12 caracteres</P>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Acepto los <a href="#">Terminos y Condiciones</a>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+            <!-- FIN MODAL BODY -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL SUSCRIPCIÓN-->
+
+  <div class="descripción">
+    <h1>¿Quienes Somos?</h1>
+    <p>Somos los integrantes del Grupo 4 de la comisión 11i. Este es nuestro primer proyecto juntos. A continuación
+      les presentamos una breve descripción de cada uno:</p>
+    <hr>
+  </div>
+  <div class="container-nosotros">
+    <div class="box-nosotros">
+      <img src="../Assets/lucas.jpeg" alt="lucas">
+      <h3>Lucas Luna</h3>
+      <p>Tengo 18 años. Estudio Programación-FullStack. Soy de Atlético Tucumán</p>
+    </div>
+    <div class="box-nosotros">
+      <img src="../Assets/carlos.jpeg" alt="carlos">
+      <h3>Carlos Diaz</h3>
+      <p>Tengo 30 años. Estudio Ing en Sistemas. Soy de Boca Jr</p>
+    </div>
+    <div class="box-nosotros">
+      <img src="../Assets/lucia.jpeg" alt="lucia">
+      <h3>Lucia Leguizamon</h3>
+      <p>Tengo 20 años. Estudio Ciencias de la Educación. Soy de Atlético Tucumán</p>
+    </div>
+    <div class="box-nosotros">
+      <img src="../Assets/clemente.jpeg" alt="clemente">
+      <h3>Clemente Cejas</h3>
+      <p>Tengo 22 años. Estudio Ing Mecánica. Soy de Atlético Tucumán</p>
+    </div>
+    <div class="box-nosotros">
+      <img src="../Assets/ll.jpeg" alt="">
+      <h3>Lucas Obejeros</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, voluptas.</p>
+    </div>
+  </div>
+  <hr class="linea">
+
+  <!-- INICIO FOOTER  -->
+  <footer>
+    <div class="container-footer">
+      <div class="box-footer">
+        <div class="logo">
+          <img src="../Assets/footer-image.png" alt="" />
+        </div>
+      </div>
+
+      <div class="box-footer">
+        <h2>Acerca de</h2>
+        <a target="_blank" href="#"><span>Nosotros</span></a>
+        <a target="_blank" href="#"><span>Login</span></a>
+        <a target="_blank" href="#"><span>Contacto</span></a>
+        <a target="_blank" href="#" data-bs-toggle="modal" data-bs-target="#navModal"><span>Suscribirse</span></a>
+      </div>
+      <div class="box-footer">
+        <h2>Redes Sociales</h2>
+        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i> Twitter</a>
+        <a target="_blank" href="https://outlook.live.com/"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+      </div>
+    </div>
+    <div class="box-copyright">
+      <hr />
+      <p>Derechos Reservados &copy; 2022 <span>Marvel & Dc Comics </span></p>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
