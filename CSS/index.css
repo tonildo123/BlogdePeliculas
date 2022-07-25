@@ -97,3 +97,8 @@ VH: relativo a la altura de la ventana gráfica
     background: linear-gradient(to right, #9c17c5 0%, #a115a4 25%, #ce5937 50%,   #a115a4 75%, #9c17c5 100%);
     
 }
+
+#footerindex{
+
+    background: linear-gradient(to right, #9c17c5 0%, #a115a4 25%, #ce5937 50%,   #a115a4 75%, #9c17c5 100%);
+}
