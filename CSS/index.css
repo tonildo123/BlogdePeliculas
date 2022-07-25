@@ -27,8 +27,6 @@ VH: relativo a la altura de la ventana gráfica
     justify-content: center;
     align-items: center;
     color: aliceblue ;
-    
-    
 }
 
 
@@ -39,6 +37,7 @@ VH: relativo a la altura de la ventana gráfica
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    flex-direction: column;
 }
 
 .card {
@@ -101,4 +100,7 @@ VH: relativo a la altura de la ventana gráfica
 #footerindex{
 
     background: linear-gradient(to right, #9c17c5 0%, #a115a4 25%, #ce5937 50%,   #a115a4 75%, #9c17c5 100%);
+}
+.col-sm-12 col-md-6 mt-3{
+
 }
