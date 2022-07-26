@@ -28,6 +28,7 @@ body{
     height: 41rem;
     width: 60rem;
     margin: 6rem auto;
+    padding-top: 2rem;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -193,6 +194,9 @@ body{
     }
 }
 
+.volver{
+    text-decoration: none;
+}
 
 
 
