@@ -27,6 +27,7 @@ body{
 .login-container {
     height: 41rem;
     width: 60rem;
+    padding-top: 3rem;
     margin: 6rem auto;
     border-radius: 20px;
     display: flex;
@@ -193,6 +194,10 @@ body{
     }
 }
 
+.volver {
+    text-decoration: none;
+
+}
 
 
 
