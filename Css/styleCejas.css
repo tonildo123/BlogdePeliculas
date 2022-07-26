@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -50,7 +51,6 @@ body {
     text-decoration: none;
     margin-top: 20px;
     margin-right: 10px;
-    font-family: "Open Sans", sans-serif;
 }
 
 .nav-menu {
@@ -159,7 +159,6 @@ footer {
     width: 100%;
     padding: 10px 2px;
     background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
-    font-family: "Open Sans", sans-serif;
 
 }
 
@@ -294,7 +293,6 @@ footer {
     height: 350px;
     width: 250px;
     border-radius: 0px 0px 10px 0px;
-    font-family: "Open Sans", sans-serif;
 }
 
 .box-nosotros h3 {
