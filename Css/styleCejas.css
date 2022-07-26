@@ -4,10 +4,13 @@
         --color-3: --color-4: --color-5: --color-6:
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -518,9 +521,6 @@ footer {
     }
     .comentary-box2 p {
         margin: 2px;
-    }
-    .comentary-box2 .fa-4x {
-
     }
     .comentary-box2 .fa-1x {
         font-size: 0.7rem;
