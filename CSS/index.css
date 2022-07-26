@@ -6,6 +6,7 @@ VW: relativo al ancho de la ventana gráfica
 VH: relativo a la altura de la ventana gráfica
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
  #main .carousel-inner img {
         
@@ -14,7 +15,9 @@ VH: relativo a la altura de la ventana gráfica
     width: 100%;
 }
 
-
+*{
+    font-family: "Open Sans", sans-serif;
+}
 
 .titulo{
 
