@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
-body {
-  background-image: linear-gradient(135deg, #ffffff, #ac3939, #000000, #fa0101);
+body{
+    background: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
+    background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
 	animation:gradient 10s ease infinite;
 	background-size: 400% 400%;
     font-family: "Open Sans", sans-serif;
@@ -67,6 +68,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
+}
+
+.social-login .google{
+    width: 60px;
+    height: 50px;
+    
 }
 
 .social-login-element {
@@ -146,6 +153,7 @@ body {
     color: var(--light-pink);
     font-weight: 600;
     cursor: pointer;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -184,197 +192,7 @@ body {
         margin: 0;
     }
 }
-/* INCIO PAG INFINITY WAR */
-.body-inf {
-    background-color: rgb(228, 228, 228);
-}
-.descrip-inf {
-    text-align: center;
-    margin: 50px;
-}
-.descrip-inf hr {
-    margin: 50px auto;
-    max-width: 1200px;
-}
-.container-pag-inf {
-    width: 100%;
-    max-width: 1100px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.box1-pag-inf {
-    width: 50%;
-}
-.box1-pag-inf img {
-    width: 100%;
-    border-radius: 10px;
-}
-.box2-pag-inf {
-    width: 50%;
-    text-align: center;
-}
-.box2-pag-inf h2 {
-    margin-bottom: 35px;
-}
-.box2-pag-inf p {
-    margin: 35px 25px;
-    padding: 10px;
-    font-size: 20px;
-}
-/* INICIO MEDIA QUERY IMG-RESUMEN */
 
-@media (max-width:910px) {
-
-    .container-pag-inf {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .box2-pag-inf {
-        width: 100%;
-    }
-    .box2-pag-inf h2 {
-        margin: 20px 0px;
-    }
-    .box2-pag-inf p {
-        margin: 35px 35px;
-        padding: 10px;
-        font-size: 20px;
-    }
-}
-@media (max-width:510px) {
-
-    .box2-pag-inf h2 {
-        margin: 20px 0px;
-    }
-    .box2-pag-inf p {
-        margin: 35px 20px;
-        padding: 5px;
-        font-size: 18px;
-    }
-}
-
-
-
-/* FIN MEDIA QUERY IMG-RESUMEN */
-
-/* Trailer aquaman */
-.container-trailer-aquaman {
-    max-width: 1100px;
-    margin: 20px auto;
-}
-.container-trailer-aquaman iframe {
-    border-radius: 10px;
-}
-/* INICIO COMENTARIOS PELICULAS */
-.container-comentary-inf {
-    width: 100%;
-    max-width: 1100px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form-control {
-    resize: none;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0px auto;
-}
-
-.container-comentary-inf2 h2,
-.container-comentary-inf2 hr {
-    max-width: 1100px;
-    margin: 25px auto;
-}
-
-.container-comentary-inf3 {
-    max-width: 1100px;
-    margin: 25px auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.comentary-box1 {
-    margin: 0px 40px 40px 30px;
-    color: rgb(20, 130, 219);
-    display: flex;
-
-}
-.container-comentary-inf4 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 100%;
-}
-.comentary-box2 {
-    margin-bottom: 10px;
-}
-.comentary-box2 p {
-    margin: 5px;
-}
-.comentary-box2 .fs-4 {
-    color: rgb(20, 130, 219);
-}
-
-.comentary-box2 .fa-1x {
-    font-size: 0.7rem;
-    color: black;
-    margin-left: 5px;
-}
-
-.comentary-box2 button {
-    border: none;
-    text-decoration: none;
-    background-color: rgb(228, 228, 228);
-}
-.comentary-box2 button i {
-    color: rgb(20, 130, 219);
-}
-
-/* FIN COMENTARIOS PELICULAS */
-
-/* INICIO MEDIA QUERY COMENTARIOS */
-@media (max-width:600px) {
-    .comentary-box1 {
-        margin: 0px 25px 25px 20px;
-        color: rgb(20, 130, 219);
-        display: flex;
-    
-    }
-    .comentary-box2 {
-        margin-bottom: 10px;
-    }
-    .comentary-box2 .fs-4 {
-        color: rgb(20, 130, 219);
-    }
-    .comentary-box2 p {
-        margin: 2px;
-    }
-    .comentary-box2 .fa-4x {
-
-    }
-    .comentary-box2 .fa-1x {
-        font-size: 0.7rem;
-        color: black;
-        margin-left: 5px;
-    }
-    
-    .comentary-box2 button {
-        border: none;
-        text-decoration: none;
-        background-color: rgb(228, 228, 228);
-    }
-    .comentary-box2 button i {
-        color: rgb(20, 130, 219);
-    }
-}
-
-/* FIN MEDIA QUERY COMENTARIOS */
 
 
 
