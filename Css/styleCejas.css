@@ -1,16 +1,11 @@
 :root {
     --color-1: rgb(226, 42, 29);
-    --color-2:
-        --color-3: --color-4: --color-5: --color-6:
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -18,7 +13,6 @@ body {
 }
 
 .header {
-    /* background-image: linear-gradient(116deg, rgb(253, 253, 81) 15%, rgb(87, 87, 253), rgb(255, 70, 70)); */
     background-image: linear-gradient(to right, #9c17c5 0%, #a115a4 50%, #ce5937 100%);
     height: 100px;
     width: 100%;
@@ -101,15 +95,11 @@ body {
 
 /* INICIO MEDIA QUERY NAVBAR */
 @media (max-width:992px) {
-    .header {
-        height: 100px;
-    }
 
     .nav img {
         height: 60px;
         position: relative;
         left: 5px;
-        z-index: 999;
     }
 
     .nav-menu {
@@ -174,7 +164,6 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    color: black;
 }
 
 .box-footer .logo img {
@@ -254,6 +243,24 @@ footer {
 }
 
 /* FIN FOOTER */
+
+/* MEDIA QUERY FOOTER */
+@media (max-width:800px) {
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .box-footer .logo img {
+        position: relative;
+        left: 0px;
+    }
+}
+
+
+
+/* FIN MEDIA QUERY FOOTER */
 
 
 /* INICIO ACERCA DE NOSOTROS */
@@ -521,6 +528,9 @@ footer {
     }
     .comentary-box2 p {
         margin: 2px;
+    }
+    .comentary-box2 .fa-4x {
+
     }
     .comentary-box2 .fa-1x {
         font-size: 0.7rem;

@@ -21,12 +21,14 @@ body{
 		background-position:0% 50%;
 	}
 }
+    
+  
+
 .login-container {
     height: 41rem;
     width: 60rem;
     padding-top: 3rem;
     margin: 6rem auto;
-    padding-top: 2rem;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -192,8 +194,9 @@ body{
     }
 }
 
-.volver{
+.volver {
     text-decoration: none;
+
 }
 
 

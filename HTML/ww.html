@@ -15,10 +15,10 @@
 </head>
 
 <body class="body-inf">
-  <!-- NAVBAR -->
+  <!--INICIO NAVBAR -->
   <header class="header">
     <nav class="nav">
-      <img class="logo" src="../Assets/foto-nav.png" alt="" />
+      <img class="logo" src="Assets/foto-nav.png" alt="" />
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i></button>
@@ -29,62 +29,21 @@
         </li>
         <li class="nav-menu-item">
           <a href="AcerDnos.html" class="nav-menu-link nav-link">Acerca de Nosotros</a>
-        </li>
-        <li class="nav-menu-item">
-          <!-- ModalContato -->
-          <li class="nav-menu-item">
-            <input class="modalcontact-l" type="checkbox" id="btn-modal">
-            <a href="#" class="nav-menu-link nav-link"><label for="btn-modal" class="lbl-modal">Contacto</label></a>
-       <div class="modal-l"> 
-           <!-- ContenidoModal-Contacto -->
-           
-          <form class="form-l">
-            <label class="x" for="btn-modal">X</label>
-            <h2 class="form-title-l">Contacto</h2>
-            <p class="form-paragraph-l">¿Tienes dudas?</p>
-          
-            <div class="form-container-l">
-              <div class="form-group-l">
-                <input type="text" id="name" class="form-input-l" placeholder=" " required minlength="3" maxlength="15">
-                <label for="name" class="form-label-l">Nombre:</label>
-                <span class="form-line-l"></span>
-              </div>
-              <div class="form-group-l">
-                <input type="email" id="email" class="form-input-l" placeholder=" " required minlength="4" maxlength="30">
-                <label for="email" class="form-label-l">Email:</label required>
-                <span class="form-line-l"></span>
-              </div>
-              <div class="form-group-l">
-                <textarea  id="textarea" cols="30" rows="1"></textarea>
-                <label for="textarea" class="form-label-l">Comentario:</label>
-                <span class="form-line-l"></span>
-              </div>
-
-              <input type="submit"   class="form-submit-l" value="Enviar">
-
-              <div class="ubicacion">
-                <h4>Ubicación</h4>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370777457!2d-65.20939048441186!3d-26.836696096502912!2m3!1f0
-              !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v16569686155
-              92!5m2!1ses!2sar"
-              width="90%" height="200em" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              
-            </div>
-          </form>
-        </div>
-      </div>
-          <!-- FinModal -->
-        <li class="nav-menu-item">
-          <a href="login.html" class="nav-menu-link nav-link">Login</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link nav-link nav-menu-link_active" data-bs-toggle="modal"
-            data-bs-target="#navModal">Suscribirse</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+            </li>
+              <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Contacto</a>
+              </li>
+            <li class="nav-menu-item">
+              <a href="login.html" class="nav-menu-link nav-link">Login</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link nav-link nav-menu-link_active" data-bs-toggle="modal"
+                data-bs-target="#navModal">Suscribirse</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+  <!-- FIN NAVBAR -->
 
   <!-- INICIO MODAL SUSCRIPCIÓN-->
   <div class="container-modal-suscrip">
@@ -97,35 +56,34 @@
           </div>
 
           <!-- INICIO MODAL BODY -->
-
           <div class="modal-body">
             <form class="row g-3">
               <div class="col-md-6">
-                <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Clemente"
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" value="" placeholder="Clemente"
                   maxlength="22" required>
               </div>
               <div class="col-md-6">
-                <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" value="" placeholder="Cejas"
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" value="" placeholder="Cejas"
                   maxlength="22" required>
               </div>
               <div class="col-md-6">
-                <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                <label for="Username" class="form-label">Usuario</label>
                 <div class="input-group">
                   <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                  <input type="text" class="form-control" id="validationDefaultUsername"
+                  <input type="text" class="form-control" id="Username"
                     aria-describedby="inputGroupPrepend2" placeholder="Cuchy25" minlength="6" maxlength="10" required>
                 </div>
               </div>
               <div class="col-md-6">
-                <label for="validationDefault03" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="Tucumán" maxlength="15"
+                <label for="Ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="Ciudad" placeholder="Tucumán" maxlength="15"
                   required>
               </div>
               <div class="col-md-6">
-                <label for="validationDefault04" class="form-label">Provincia</label>
-                <select class="form-select" id="validationDefault04" required>
+                <label for="Provincia" class="form-label">Provincia</label>
+                <select class="form-select" id="Provincia" required>
                   <option selected disabled value="">Seleccione</option>
                   <option>Buenos Aires</option>
                   <option>Capital Federal</option>
@@ -154,18 +112,18 @@
                 </select>
               </div>
               <div class="col-md-6">
-                <label for="validationDefault05" class="form-label">Codigo postal</label>
-                <input type="text" class="form-control" id="validationDefault05" placeholder="4000" maxlength="4"
+                <label for="postal" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="postal" placeholder="4000" maxlength="4"
                   required>
               </div>
               <div class="col-md-6">
-                <label for="validationDefault05" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="passwordDefault05" minlength="6" maxlength="12"
+                <label for="Contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="Contraseña" minlength="6" maxlength="12"
                   required>
               </div>
               <div class="col-md-6">
                 <label for="validationDefault05" class="form-label">Repetir Contraseña</label>
-                <input type="password" class="form-control" id="passwordDefault05" minlength="6" maxlength="12"
+                <input type="password" class="form-control" id="validationDefault05" minlength="6" maxlength="12"
                   required>
               </div>
               <div>
@@ -356,10 +314,10 @@
 
       <div class="box-footer">
         <h2>Acerca de</h2>
-        <a target="" href="AcerDnos.html"><span>Nosotros</span></a>
-        <a target="" href="login.html"><span>Login</span></a>
-        <a target="" href="error.html"><span>Contacto</span></a>
-        <a target="" href="#" data-bs-toggle="modal" data-bs-target="#navModal"><span>Suscribirse</span></a>
+        <a href="AcerDnos.html"><span>Nosotros</span></a>
+        <a href="login.html"><span>Login</span></a>
+        <a href="error.html"><span>Contacto</span></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#navModal"><span>Suscribirse</span></a>
       </div>
       <div class="box-footer">
         <h2>Redes Sociales</h2>

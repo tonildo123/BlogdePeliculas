@@ -66,7 +66,6 @@ body .modal-l{
 .form-l{
     background-color: #fff;
     width: 90%;
-    height: 60rem;
     margin: auto;
     max-width: 400px;
     padding: 2.5em 3em;
@@ -123,8 +122,6 @@ body .modal-l{
     font-weight: 300;
     font-size: 1rem;
     padding: .8em 0;
-    margin-bottom: -2em;
-    margin-top: -2em;
     border: none;
     border-radius: .5em;
 }
